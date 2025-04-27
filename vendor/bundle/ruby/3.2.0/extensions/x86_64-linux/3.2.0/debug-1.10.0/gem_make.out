@@ -1,0 +1,19 @@
+current directory: /home/heidless/projects/sandbox/RoR/DEANIN-react-on-rails/react_on_rails_api_v1/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+/home/heidless/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/heidless/projects/sandbox/RoR/DEANIN-react-on-rails/react_on_rails_api_v1/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250419-29758-miauix sitelibdir\=./.gem.20250419-29758-miauix clean
+
+current directory: /home/heidless/projects/sandbox/RoR/DEANIN-react-on-rails/react_on_rails_api_v1/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250419-29758-miauix sitelibdir\=./.gem.20250419-29758-miauix
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/heidless/projects/sandbox/RoR/DEANIN-react-on-rails/react_on_rails_api_v1/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250419-29758-miauix sitelibdir\=./.gem.20250419-29758-miauix install
+/usr/bin/install -m 0755 debug.so ./.gem.20250419-29758-miauix/debug
+
+current directory: /home/heidless/projects/sandbox/RoR/DEANIN-react-on-rails/react_on_rails_api_v1/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250419-29758-miauix sitelibdir\=./.gem.20250419-29758-miauix clean
