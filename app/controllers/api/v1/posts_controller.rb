@@ -3,13 +3,18 @@ class Api::V1::PostsController < ApplicationController
 
   # GET /posts
   def index
-    @posts = Post.all
+    # @posts = Post.all
+    
+    @posts = Post.all.order("created_at DESC")
 
     render json: @posts
   end
 
   # GET /posts/1
   def show
+    # set delay to test 'Loading..' functionality
+    sleep 2
+    
     render json: @post
   end
 
