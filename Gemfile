@@ -42,7 +42,7 @@ end
 
 
 
-gem "rspec-rails", "~> 7.1", :groups => [:development, :test]
+gem "rspec-rails", "~> 8.0", :groups => [:development, :test]
 
 gem "factory_bot_rails", "~> 6.4", :groups => [:development, :test]
 
