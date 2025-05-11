@@ -40,7 +40,7 @@ class Api::V1::PostsController < ApplicationController
 
   # DELETE /posts/1
   def destroy
-    @post.destroy!
+    @post.destroy
   end
 
   private
