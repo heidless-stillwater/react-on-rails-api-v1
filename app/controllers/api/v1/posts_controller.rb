@@ -22,14 +22,13 @@ class Api::V1::PostsController < ApplicationController
   def show
     # set delay to test 'Loading..' functionality
     # sleep 2
-
+    # debugger
     if @post.image.attached?
-      @post.as_json.merge(image_url: url_for(@post.image))
+      render json: @post.as_json.merge(image_url: url_for(@post.image))
     else
-      @post.as_json.merge(image_url: nil)
-    end    
+      render json: @post.as_json.merge(image_url: nil)
+    end  
 
-    render json: @post
   end
 
   # POST /posts
