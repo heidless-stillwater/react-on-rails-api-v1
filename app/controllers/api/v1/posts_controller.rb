@@ -3,19 +3,16 @@ class Api::V1::PostsController < ApplicationController
 
   # GET /posts
   def index
-    # @posts = Post.all
-    
-    @posts = Post.all.order("created_at DESC")
+    posts_per_page = params[:per_page] || 10
+    @posts = Post.order(created_at: :desc)
+    posts_with_images = paginate_posts(@posts, posts_per_page)
+    total_posts_count = Post.count
 
-    posts_with_images = @posts.map do |post|
-      if post.image.attached?
-        post.as_json.merge(image_url: url_for(post.image))
-      else
-        post.as_json.merge(image_url: nil)
-      end
-    end
-
-    render json: posts_with_images
+    render json: {
+      posts: posts_with_images,
+      total_count: total_posts_count,
+      per_page: posts_per_page
+    }
   end
 
   # GET /posts/1
