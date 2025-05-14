@@ -3,8 +3,9 @@ class Api::V1::PostsController < ApplicationController
 
   # GET /posts
   def index
-    posts_per_page = params[:per_page] || 10
+    posts_per_page = 2
     @posts = Post.order(created_at: :desc)
+    # debugger
     posts_with_images = paginate_posts(@posts, posts_per_page)
     total_posts_count = Post.count
 
