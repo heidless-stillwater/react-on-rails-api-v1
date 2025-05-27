@@ -40,8 +40,6 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-
-
 gem "rspec-rails", "~> 7.1", :groups => [:development, :test]
 
 gem "factory_bot_rails", "~> 6.4", :groups => [:development, :test]
@@ -51,3 +49,5 @@ gem "faker", "~> 3.5"
 gem "shoulda-matchers", "~> 6.4", :groups => [:development, :test]
 
 gem "kaminari", "~> 1.2"
+
+gem "google-cloud-storage", "~> 1.56"
