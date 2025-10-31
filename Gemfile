@@ -46,7 +46,7 @@ gem "factory_bot_rails", "~> 6.4", :groups => [:development, :test]
 
 gem "faker", "~> 3.5"
 
-gem "shoulda-matchers", "~> 6.4", :groups => [:development, :test]
+gem "shoulda-matchers", "~> 6.5", :groups => [:development, :test]
 
 gem "kaminari", "~> 1.2"
 
